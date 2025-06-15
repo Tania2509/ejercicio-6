@@ -20,7 +20,7 @@ namespace ejercicio_6
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtLado.Clear();
-            lblError.Text = "";
+            lblError.Text = "Error:";
             txtRespuesta.Clear();
             txtLado.ReadOnly = false;
         }
