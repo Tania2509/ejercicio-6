@@ -20,6 +20,7 @@ namespace ejercicio_6
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtLado.Clear();
+            lblError.Text = "";
             txtRespuesta.Clear();
             txtLado.ReadOnly = false;
         }
@@ -43,19 +44,19 @@ namespace ejercicio_6
 
                     else
                     {
-                        txtRespuesta.Text = "Ingrese numeros positivos";
+                    lblError.Text = "Ingrese numeros positivos";
                     }
             }
             else
             {
                 if (string.IsNullOrEmpty(txtLado.Text))
                 {
-                    txtRespuesta.Text = "Existe un campo vacio";
+                    lblError.Text = "Existe un campo vacio";
                 }
 
                 else
                 {
-                    txtRespuesta.Text = "Ingresa numeros y no letras";
+                    lblError.Text = "Ingresa numeros y no letras";
                 }
             }
 
